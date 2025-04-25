@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CicloVia</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>CV</div>
+            <span>Ciclo<br />Via</span>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#room">Descubre</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="#news">Reviews</a></li>
+          <li><a href="#" id="login-btn">Login</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+<div id="overlay" class="overlay hidden">
+  <div class="form-container">
+    <p class="title">Bienvenido</p>
+    <form class="form">
+      <input type="email" class="input" placeholder="Email">
+      <input type="password" class="input" placeholder="Password">
+      <p class="page-link">
+        <span class="page-link-label">Forgot Password?</span>
+      </p>
+      <button class="form-btn">Log in</button>
+    </form>
+    <p class="sign-up-label">
+      Don't have an account?<span class="sign-up-link">Sign up</span>
+    </p>
+    <div class="buttons-container">
+      <div class="apple-login-button">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" class="apple-icon" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path d="M747.4 535.7c-.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7zm-105.1-305c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z"></path>
+        </svg>
+        <span>Log in with Apple</span>
+      </div>
+      <div class="google-login-button">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px" class="google-icon" viewBox="0 0 48 48" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+          <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+          <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+          <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+        </svg>
+        <span>Log in with Google</span>
+      </div>
+    </div>
+    <button id="close-btn" class="close-btn">X</button>
+    
+  </div>
+</div>
+
+<header class="header" id="home">
+  <div class="section__container header__container">
+    <p class="section__subheader">BIENVENIDO A CICLOVIA</p>
+    <h1>Encuentra tu ruta,<br />Mejora tus tiempos</h1>
+    <button class="btn">Explorar</button>
+  </div>
+</header>
+
+<section class="room__container" id="room">
+  <p class="section__subheader">Descubre más</p>
+  <h2 class="section__header">Pedalea con conocimiento</h2>
+  <div class="room__grid">
+
+    <div class="room__card">
+      <img src="assets/seguridad-ciclista.jpg" alt="Seguridad Ciclista" />
+      <div class="room__card__details">
+        <div>
+          <h4>Seguridad en la Ruta</h4>
+          <p>Consulta zonas de riesgo, alertas urbanas y consejos de seguridad para tu ruta diaria.</p>
+          <a href="#" class="more-info-toggle">Ver más...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="room__card">
+      <img src="assets/comunidad-ciclista.jpg" alt="Comunidad Ciclista" />
+      <div class="room__card__details">
+        <div>
+          <h4>Conecta con Ciclistas</h4>
+          <p>Forma grupos de viaje, comparte rutas y haz comunidad con personas que pedalean como tú.</p>
+          <a href="#" class="more-info-toggle">Ver más...</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="room__card">
+      <img src="assets/recompensas-ciclismo.png" alt="Recompensas" />
+      <div class="room__card__details">
+        <div>
+          <h4>Recompensas por Pedalear</h4>
+          <p>Gana puntos y descuentos en tiendas locales por cada kilómetro recorrido.</p>
+          <a href="#" class="more-info-toggle">Ver más...</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+    <section class="intro">
+      <div class="section__container intro__container">
+        <div class="intro__cotent">
+          <p class="section__subheader">INTRO VIDEO</p>
+          <h2 class="section__header">Conoce mas sobre nuestra oferta</h2>
+          <button class="btn">Book Now</button>
+        </div>
+        <div class="intro__video">
+          <video src="assets/luxury.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </section>
+    <section class="section__container feature__container" id="feature">
+      <p class="section__subheader">FEATURES</p>
+      <h2 class="section__header">What We Offer</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <span><i class="ri-shield-check-line"></i></span>
+          <h4>Tu Ruta, Tu Seguridad</h4>
+          <p>
+            Planifica trayectos seguros evitando zonas peligrosas y congestionadas. Nuestra app te sugiere rutas optimizadas para ciclistas en Lima.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-group-line"></i></span>
+          <h4>Comunidad Ciclista</h4>
+          <p>
+            Conecta con otros ciclistas que comparten rutas similares, crea grupos de viaje y fortalece la comunidad en cada pedaleo.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-gift-line"></i></span>
+          <h4>Recompensas por Pedalear</h4>
+          <p>
+            Gana puntos y canjéalos por descuentos en tiendas, cafés o servicios aliados. Pedalea, acumula y recibe beneficios.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-leaf-line"></i></span>
+          <h4>Movilidad Sostenible</h4>
+          <p>
+            Reduce tu huella de carbono optando por una alternativa saludable, económica y libre de tráfico. Lima necesita más ciclistas como tú.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-map-pin-user-line"></i></span>
+          <h4>Diseñada para Ciclistas</h4>
+          <p>
+            A diferencia de otras apps, CicloVía es 100% pensada para ciclistas urbanos. Rutas personalizadas y funcionalidades locales.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-user-smile-line"></i></span>
+          <h4>Prueba Gratuita</h4>
+          <p>
+            Únete sin costo y prueba todas las funcionalidades. Descubre cómo CicloVía transforma tu manera de moverte por la ciudad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container news__container" id="news">
+      <div class="news__header">
+        <div>
+          <p class="section__subheader">What people think</p>
+          <h2 class="section__header">Reviews</h2>
+        </div>
+        <div class="section__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="news__grid">
+        <div class="news__card">
+          <img src="assets/reseña-1.jpg" alt="news" />
+          <div class="news__card__title">
+            <p>Rating: ★★★★★</p>
+            <p>By Kiara Torres, 24</p>
+          </div>
+          <h4>Ciclista diaria</h4>
+          <p>
+            La mejor parte es la comunidad. Siempre hay alguien más en la ruta. Me siento más segura y acompañada.
+          </p>
+        </div>
+        <div class="news__card">
+          <img src="assets/reseña-2.webp" alt="news" />
+          <div class="news__card__title">
+            <p>Rating: ★★★★☆</p>
+            <p>By Martín Reyes, 20</p>
+          </div>
+          <h4>Estudiante Universitario</h4>
+          <p>
+            Uso la app para ir a clases. Me encanta poder evitar el tráfico y además ganar recompensas. ¡Es una motivación extra para pedalear!
+          </p>
+        </div>
+        <div class="news__card">
+          <img src="assets/reseña-3.jpg" alt="news" />
+          <div class="news__card__title">
+            <p>Rating: ★★★★★</p>
+            <p>By Gabriel Delgado, 22</p>
+          </div>
+          <h4>Estudiante universitario</h4>
+          <p>
+            CicloVía me cambió la forma de moverme. Las rutas seguras y el poder compartir trayectos con otros ciclistas me dan tranquilidad cada día.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <div>CV</div>
+            <span>CicloVia<br />Peru</span>
+          </div>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            laudantium unde. Doloremque eaque debitis laborum labore voluptates
+            iste molestiae consectetur.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+51 984 567 383</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-record-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>info@CicloVia.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <h5>Location</h5>
+                <p>Peru</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 CicloVia. All rights reserved.
+      </div>
+    </footer>
+
+    <div id="button-container">
+      <ul>
+        <li style="--i:#40ca47fd;--j:#c9d64e;">
+          <span class="icon">💬</span>
+          <span class="title">Soporte</span>
+        </li>
+      </ul>
+  </div>
+
+  <div id="chat-container" class="card-container">
+      <button class="close-button">&times;</button>
+      <div class="card-header">
+          <div class="img-avatar"></div>
+          <div class="text-chat">Chat</div>
+      </div>
+      <div class="card-body">
+          <div class="messages-container">
+              <div class="message-box left">
+                  <p>En que podemos ayudarte?</p>
+              </div>
+              <div class="message-box right">
+                  <p>Detalles de uso de la plataforma</p>
+              </div>
+          </div>
+          <div class="message-input">
+            <form>
+              <textarea placeholder="Escribe tu mensaje aquí" class="message-send"></textarea>
+              <button type="submit" class="button-send">Enviar</button>
+            </form>
+          </div>
+      </div>
+  </div>
+         
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+   
+  </body>
+</html>
+
