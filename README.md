@@ -1,5 +1,3 @@
-# Plataforma de Asesoramiento Agrícola
-
 ## Descripción del Proyecto
 
 ## Herramientas Principales
